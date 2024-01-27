@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Input = ({ label, placeholder, value, setValue }) => {
   const saveValue = (e) => {
-    setValue(e.target.value)
-  }
+    setValue(e.target.value);
+  };
 
   return (
     <Container>
@@ -27,8 +27,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  &:focus-within{
-    >div>label{
+  &:focus-within {
+    > div > label {
       color: ${({ theme }) => theme.content.primary};
       font-weight: 600;
     }
@@ -67,7 +67,7 @@ const InputBox = styled.input`
     color: ${({ theme }) => theme.content.tertiary};
   }
 
-  &:focus{
+  &:focus {
     background-color: ${({ theme }) => theme.group.secondary};
   }
 `;
