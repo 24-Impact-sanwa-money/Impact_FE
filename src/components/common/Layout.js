@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <Wrapper>
-      <Main className="main">
+      <Main>
         <Outlet />
       </Main>
       <Footer />
@@ -22,6 +22,7 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   padding: 12px;
   flex-direction: column;
