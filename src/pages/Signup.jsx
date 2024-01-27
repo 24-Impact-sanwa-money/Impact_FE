@@ -47,7 +47,9 @@ export const Signup = () => {
   };
 
   const userHandlerClick = () => {
-    getUserHandler({ handle: id });
+    getUserHandler({
+      handle: id
+    });
   };
 
   return (

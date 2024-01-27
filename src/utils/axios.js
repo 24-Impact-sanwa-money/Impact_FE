@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "./Token";
 
-const BASE_URL = `https://api.mycut4cut.click`;
+const BASE_URL = `https://apiv2.mycut4cut.click`;
 
 export const instance = axios.create({
   baseURL: BASE_URL

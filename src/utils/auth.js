@@ -10,7 +10,7 @@ export const useGetAuthVerify = () => {
   const [page, setPage] = useRecoilState(PageState);
   return useMutation(
     async (params) => {
-      return await instance.post(`/auth/phone/verify`, params);
+      return await instance.post(`/auth/verify`, params);
     },
     {
       onError: () => {
@@ -47,12 +47,12 @@ export const useGetHandler = () => {
   const navigate = useNavigate();
   return useMutation(
     async (params) => {
-      return await instance.post(`/user/my/handle`, params);
+      return await instance.put(`/user/me`, params);
     },
     {
       onSuccess: () => {
         toast.success("가입이 완료되었습니다.");
-        navigate("/");
+        navigate("/home");
       },
       onError: () => {
         toast.error("오류가 발생하였습니다.");

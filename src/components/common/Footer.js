@@ -16,8 +16,12 @@ const Footer = () => {
 
   return (
     <Footers>
-      <Button selected={loc.pathname === "/"} onClick={() => nav("/")}>
-        <Img selected={loc.pathname === "/"} onImg={onPeed} offImg={offPeed} />
+      <Button selected={loc.pathname === "/home"} onClick={() => nav("/home")}>
+        <Img
+          selected={loc.pathname === "/home"}
+          onImg={onPeed}
+          offImg={offPeed}
+        />
         피드
       </Button>
       <Button selected={loc.pathname === "/save"} onClick={() => nav("/save")}>
