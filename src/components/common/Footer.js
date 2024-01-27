@@ -1,32 +1,60 @@
 import React from "react";
 import styled from "styled-components";
+import peed from "../../assets/imgs/peed.svg";
+import save from "../../assets/imgs/save.svg";
+import search from "../../assets/imgs/search.svg";
+import profile from "../../assets/imgs/profile.svg"
+
 
 const Footer = () => {
   return (
     <Footers>
-      <div className="content">
-        <h2 className="footer">this is footer</h2>
-      </div>
+      <Button>
+        <Img src={peed} />
+        피드
+      </Button>
+      <Button>
+        <Img src={save} />
+        보관함
+      </Button>
+      <Button>
+        <Img src={search} />
+        검색
+      </Button>
+      <Button>
+        <Img src={profile} />
+        프로필
+      </Button>
     </Footers>
   );
 };
 
 const Footers = styled.footer`
   width: 100%;
-  height: 100px;
-  background-color: #dde0ea;
-  > .footer {
-    padding-top: 100px;
-  }
-  > .content {
-    width: 96%;
-    max-width: 1100px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  height: 91px;
+  display: flex;
+  padding-top: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
 `;
+
+const Button = styled.button`
+  background-color: ${({ theme }) => theme.background.primary};
+  height: auto;
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: ${({ theme }) => theme.content.primary};
+`;
+
+const Img = styled.img`
+  width: 28px;
+  height: 28px;
+`
 
 export default Footer;
