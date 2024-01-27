@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 		box-sizing: border-box;
 	}
 	body{
-		color: ${({ theme }) => theme.Background.Primary};
-		background-color: ${({ theme }) => theme.Content.Primary};
+		color: ${({ theme }) => theme.background.primary};
+		background-color: ${({ theme }) => theme.content.primary};
 	}
 `;
