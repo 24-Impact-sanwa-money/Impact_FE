@@ -1,12 +1,10 @@
 import styled from "styled-components";
 import Footer from "./Footer";
-import Header from "./Header";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
     <Wrapper>
-      <Header />
       <Main className="main">
         <Outlet />
       </Main>
@@ -23,7 +21,6 @@ const Wrapper = styled.div`
 `;
 
 const Main = styled.main`
-  min-height: calc(100vh - 100px);
   overflow-y: auto;
   flex: 1;
 `;
