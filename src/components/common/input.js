@@ -1,22 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const Input = ({ label, placeholder, value, setValue }) => {
-  const saveValue = (e) => {
-    setValue(e.target.value);
-  };
-
+const Input = ({ type = "text", placeholder, label, ...rest }) => {
   return (
     <Container>
       <TextContainer>
         <Text htmlFor="input">{label}</Text>
       </TextContainer>
-      <InputBox
-        id="input"
-        placeholder={placeholder}
-        onChange={saveValue}
-        value={value}
-      />
+      <InputBox type={type} placeholder={placeholder} {...rest} />
     </Container>
   );
 };
@@ -65,6 +56,7 @@ const InputBox = styled.input`
 
   &::placeholder {
     color: ${({ theme }) => theme.content.tertiary};
+    font-weight: 400;
   }
 
   &:focus {

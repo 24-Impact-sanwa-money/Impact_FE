@@ -21,15 +21,33 @@ const Footer = () => {
         피드
       </Button>
       <Button selected={loc.pathname === "/save"} onClick={() => nav("/save")}>
-        <Img selected={loc.pathname === "/save"} onImg={onSave} offImg={offSave} />
+        <Img
+          selected={loc.pathname === "/save"}
+          onImg={onSave}
+          offImg={offSave}
+        />
         보관함
       </Button>
-      <Button selected={loc.pathname === "/search"} onClick={() => nav("/search")}>
-        <Img selected={loc.pathname === "/search"} onImg={onSearch} offImg={offSearch} />
+      <Button
+        selected={loc.pathname === "/search"}
+        onClick={() => nav("/search")}
+      >
+        <Img
+          selected={loc.pathname === "/search"}
+          onImg={onSearch}
+          offImg={offSearch}
+        />
         검색
       </Button>
-      <Button selected={loc.pathname === "/profile"} onClick={() => nav("/profile")}>
-        <Img selected={loc.pathname === "/profile"} onImg={onProfile} offImg={offProfile} />
+      <Button
+        selected={loc.pathname === "/profile"}
+        onClick={() => nav("/profile")}
+      >
+        <Img
+          selected={loc.pathname === "/profile"}
+          onImg={onProfile}
+          offImg={offProfile}
+        />
         프로필
       </Button>
     </Footers>
@@ -56,7 +74,8 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
   gap: 5px;
-  color: ${({ selected,theme }) => (selected ? theme.content.primary : theme.content.tertiary)};
+  color: ${({ selected, theme }) =>
+    selected ? theme.content.primary : theme.content.tertiary};
 `;
 
 const Img = styled.img`

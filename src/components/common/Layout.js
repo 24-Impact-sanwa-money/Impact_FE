@@ -22,7 +22,13 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   overflow-y: auto;
-  flex: 1;
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
 `;
 
 export default Layout;
