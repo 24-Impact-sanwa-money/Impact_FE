@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import Footer from "./Footer";
 import Header from "./Header";
+import { Outlet } from "react-router-dom";
 
-const Layout = ({ margin, children }) => {
+const Layout = () => {
   return (
-    <Wrapper margin={margin}>
+    <Wrapper>
       <Header />
-      <Main className="main">{children}</Main>
+      <Main className="main">
+        <Outlet />
+      </Main>
       <Footer />
     </Wrapper>
   );
