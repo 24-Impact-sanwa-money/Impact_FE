@@ -38,8 +38,7 @@ const Title = styled.p`
 `
 
 const Container = styled.div`
-  margin: 15px;
-  width: 92vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
