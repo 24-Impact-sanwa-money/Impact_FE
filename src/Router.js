@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./context/themeProvider";
 import { GlobalStyle } from "./style/GlobalStyle";
-import { Home } from "./pages/home";
+import Home from "./pages/home";
 import Save from "./pages/save";
 import Search from "./pages/search";
 import Profile from "./pages/profile";

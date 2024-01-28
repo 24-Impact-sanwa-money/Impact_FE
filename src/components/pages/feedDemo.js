@@ -1,59 +1,47 @@
-import React from "react";
-import { FeedDemo } from "../components/pages/feedDemo";
 import styled from "styled-components";
-import userImg from "../assets/imgs/userImg.svg";
-import check from "../assets/imgs/check.svg";
-import option from "../assets/imgs/option.svg";
-import fourcut from "../assets/imgs/4cut.png";
-import favorite from "../assets/imgs/favorite.svg";
-import comment from "../assets/imgs/comment.svg";
-import place from "../assets/imgs/place.svg";
-import { Getfeeds } from "../utils/home";
-import { useRecoilValue, useSetRecoilState } from "recoil";
-import { idArrayAtom } from "../components/atom/authAtom";
+import userImg from "../../assets/imgs/userImg.svg";
+import check from "../../assets/imgs/check.svg";
+import option from "../../assets/imgs/option.svg";
+import fourcut from "../../assets/imgs/4cut.png";
+import favorite from "../../assets/imgs/favorite.svg";
+import comment from "../../assets/imgs/comment.svg";
+import place from "../../assets/imgs/place.svg";
 
-const Home = () => {
-  const { data: UserFeeds } = Getfeeds();
-  const getFeedId = useSetRecoilState(idArrayAtom);
+export const FeedDemo = () => {
   return (
-    <>
-      <FeedDemo />
-      {UserFeeds?.map((item, idx) => (
-        <FlexContainer key={idx}>
-          <Container>
-            <Head>
-              <User src={userImg} />
-              <NameContainer>
-                <Name>Ryan kwan</Name>
-                <Check src={check} />
-              </NameContainer>
-              <Option src={option} />
-            </Head>
-            <Fourcut src={item.picture_url} />
-            <Foot>
-              <Action>
-                <FavoriteContainer>
-                  <FavoriteImg src={favorite} />
-                  <FavoriteText>587K</FavoriteText>
-                </FavoriteContainer>
-                <CommentContainer>
-                  <CommentImg src={comment} />
-                  <CommentText>2,111</CommentText>
-                </CommentContainer>
-              </Action>
-              <Content>
-                <Place>
-                  <PlaceImg src={place} />
-                  <PlaceName>{item.location_name}</PlaceName>
-                </Place>
-                <Explain>{item.content}</Explain>
-                <Time>2024-01-28</Time>
-              </Content>
-            </Foot>
-          </Container>
-        </FlexContainer>
-      ))}
-    </>
+    <FlexContainer>
+      <Container>
+        <Head>
+          <User src={userImg} />
+          <NameContainer>
+            <Name>_chaechae_1</Name>
+            <Check src={check} />
+          </NameContainer>
+          <Option src={option} />
+        </Head>
+        <Fourcut src={fourcut} />
+        <Foot>
+          <Action>
+            <FavoriteContainer>
+              <FavoriteImg src={favorite} />
+              <FavoriteText>587K</FavoriteText>
+            </FavoriteContainer>
+            <CommentContainer>
+              <CommentImg src={comment} />
+              <CommentText>2,111</CommentText>
+            </CommentContainer>
+          </Action>
+          <Content>
+            <Place>
+              <PlaceImg src={place} />
+              <PlaceName>포토이즘 하이브사옥점</PlaceName>
+            </Place>
+            <Explain>윤진이와 한 컷~~</Explain>
+            <Time>1월 27일 (토) 오후 5시 52분</Time>
+          </Content>
+        </Foot>
+      </Container>
+    </FlexContainer>
   );
 };
 
@@ -104,12 +92,10 @@ const Check = styled.img`
 
 const Option = styled.img``;
 
-const Fourcut = styled.img`
-  width: 100%;
-`;
+const Fourcut = styled.img``;
 
 const Foot = styled.div`
-  width: 100%;
+  height: auto;
   display: flex;
   padding: 12px;
   flex-direction: column;
@@ -201,5 +187,3 @@ const Time = styled.p`
   letter-spacing: -0.12px;
   color: ${({ theme }) => theme.content.teritary};
 `;
-
-export default Home;
