@@ -134,7 +134,6 @@ export const Signup = () => {
 
 const Title = styled.p`
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.24px;
