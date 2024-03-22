@@ -1,75 +1,30 @@
-# MyCut4Cut Frontend
+제 1회 IMPACTHON 대상 Team 9 '네컷내컷' 입니다.
 
-- https://impact-fe.pages.dev/
-- https://impact-machine.pages.dev/
+Frontend: https://impact-fe.pages.dev/
+Backend: https://apiv2.mycut4cut.click/
+Kiosk: https://impact-machine.pages.dev/
 
---- 
+![mycut4cut](https://github.com/impacthon24-t9/.github/assets/93381265/657c9562-d737-45b4-8af0-c988f590d7c6)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Summary
 
-## Available Scripts
+"mz세대, 소셜미디어 / 커뮤니티" 라는 주제를 받았습니다. mz세대들의 공통점과 특징을 분석하여 develop한 결과 두 가지의 특징을 찾을 수 있었습니다.
 
-In the project directory, you can run:
+첫 번째로, mz세대들이 인스타그램이나 카카오톡 메신져 등 즉, SNS를 많이 이용하고 미쳐있다고 할 정도로 사용빈도가 높습니다.
 
-### `yarn start`
+두 번째로, 사진을 많이 찍고 남기는 걸 좋아하고 공유를 해 소식을 주고 받고 하는 mz세대의 특징을 찾을 수 있었습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+기존의 네컷 서비스를 분석해 보면 QR코드로 찍는 과정을 저장할 수 있지만 QR코드가 손상될 경우 아무 것도 할 수 없고 기한이 짧아 저장을 하고 싶어도 못 하는 경우가 빈번히 발생하여
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+이러한 문제점을 해결하기 위하여 '내컷네컷' 서비스를 기획하였습니다. 
 
-### `yarn test`
+### 인생 네컷을 영구적으로 저장할 수 있는 서비스?!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 인생네컷을 저장하고 싶은데 QR 코드가 만료 되거나 손상 되어 저장 할 수 없으신가요?
+- 네컷내컷 서비스로 사진을 공유하고 영구적으로 저장해 보세요!
 
-### `yarn build`
+## FE Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Language : Javascript
+- Skills : React.js, React-query, axios, styled-components, recoil
+- Tools : Visual studio code, Figma
