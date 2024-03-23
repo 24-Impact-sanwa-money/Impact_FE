@@ -6,6 +6,8 @@ Kiosk: https://impact-machine.pages.dev/
 
 ![mycut4cut](https://github.com/impacthon24-t9/.github/assets/93381265/657c9562-d737-45b4-8af0-c988f590d7c6)
 
+프로젝트 팀원 : Back-end 1명, Designer 1명, Front-end & Kiosk 3명, planner 1명
+
 ### Summary
 
 "mz세대, 소셜미디어 / 커뮤니티" 라는 주제를 받았습니다. mz세대들의 공통점과 특징을 분석하여 develop한 결과 두 가지의 특징을 찾을 수 있었습니다.
